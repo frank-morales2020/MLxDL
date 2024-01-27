@@ -10,7 +10,7 @@ Copy_of_rag_fusion_pipeline.ipynb: This notebook shows how to implement RAG Fusi
 
 Cross_Entropy.ipynb: A Gentle Introduction to Cross-Entropy for Machine Learning
 
-DBSWIM.ipynb
+DBSWIM.ipynb: POC FOR FAA SWIM DATA WITH POSTGRESQL 
 
 DLCourse.ipynb: Building Transformer Models with Attention Crash Course. Build a Neural Machine Translator in 12 Day
 
@@ -25,6 +25,7 @@ LICENSE
 LLAMA2.ipynb
 LSTM_TIMESERIES.ipynb
 META_AI_SegmentAnythingModel(SAM)_predictor_example.ipynb
+
 MISTRAL_TUTORIAL.ipynb
 MISTRAL_TUTORIAL_T4GPU.ipynb
 MISTRAL_TUTORIAL_a100gpuVt4gpu-A100.ipynb
@@ -32,7 +33,6 @@ MISTRAL_TUTORIAL_a100gpuVt4gpu-A100GPU-2.ipynb
 
 MambaGC.ipynb
 Migrate_from_pg_embedding_to_pg_vector.ipynb
-
 
 Mistral-7B-Instruct-without-flash_attention_2.ipynb
 Mistral-7B-Instruct.ipynb
@@ -43,7 +43,6 @@ Mistral_in_AWS.ipynb
 Mistral_in_AWS_with_TWOMODELS.ipynb
 Mistral_integration_with_langchain.ipynb
 Mixtral_8x7B.ipynb
-
 
 OpeanAIPOC.ipynb
 
@@ -63,28 +62,39 @@ TransformerCourse.ipynb
 
 aitutorials_custom_b747.ipynb
 
-cv2023.ipynb
+cv2023.ipynb: Computer Vision 
 data.csv
 demo_supervision.ipynb
 dogbreed.ipynb 
 first_order_model_demo.ipynb
+
 gptvisionapi-final.ipynb
 gptvisionapi_complete.ipynb
+
 langchain_opensourceLLM_mistral7B_openai.ipynb
+
 mistral_rag_pgvector.ipynb
 mistral_test.ipynb
 mistral_test_AWS.ipynb
+
 myknn.ipynb
 mysurya.ipynb
+
 opeanai_aws_integration.ipynb
+
 openai_pgvector_helloworld_FrankMorales_version.ipynb
 openai_pgvector_helloworld_FrankMorales_version_model_gpt-3.5-turbo-0613.ipynb
 openai_pgvector_helloworld_FrankMorales_version_model_gpt-4-0613.ipynb
+
 part3_neural_network_mnist_data_with_rotations.ipynb
+
 rag_fusion_pipeline_PostgreSQL_FM.ipynb
+
 stable_diffusion.ipynb
+
 time_series_exploratory_data_analysis_in_python.ipynb
 time_series_transformers.ipynb
+
 transformer.ipynb
 transformer_TRANSLATOR.ipynb
 
