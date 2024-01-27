@@ -67,7 +67,9 @@ aitutorials_custom_b747.ipynb
 cv2023.ipynb: Computer Vision 
 data.csv
 demo_supervision.ipynb
-dogbreed.ipynb 
+
+dogbreed.ipynb: Generate the identification of the dog's breed using model gpt-4-vision-preview based on OpenAI API.  
+
 first_order_model_demo.ipynb
 
 gptvisionapi-final.ipynb
