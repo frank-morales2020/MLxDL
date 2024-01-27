@@ -19,7 +19,7 @@ Embedchain_Demo.ipynb: Embedchain is an open-source RAG Framework that makes cre
 GPT4V_IMAGE_PATHPASSING.ipynb
 GPT4V_IMAGE_URLPASSING.ipynb
 
-IMAGE_GENERATOR.ipynb: Generate Images with DALLE-3 USING OPENAI API
+IMAGE_GENERATOR.ipynb: Generate Images with model DALLE-3 USING OPENAI API
 
 LICENSE
 
@@ -100,6 +100,6 @@ time_series_transformers.ipynb
 transformer.ipynb
 transformer_TRANSLATOR.ipynb
 
-transformer_from_scratch.ipynb:    "In this blog, create and train a transformer from scratch. We'll go through each foundational element step by step and explain what is happening along 
+transformer_from_scratch.ipynb:  Create and train a transformer from scratch. Going through each foundational element step by step and explain what is happening along 
 
 transformermodel.ipynb
