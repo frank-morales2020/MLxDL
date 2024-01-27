@@ -19,7 +19,7 @@ Embedchain_Demo.ipynb: Embedchain is an open-source RAG Framework that makes cre
 GPT4V_IMAGE_PATHPASSING.ipynb
 GPT4V_IMAGE_URLPASSING.ipynb
 
-IMAGE_GENERATOR.ipynb
+IMAGE_GENERATOR.ipynb: Generate Images with DALLE-3 USING OPENAI API
 
 LICENSE
 
