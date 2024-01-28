@@ -17,7 +17,8 @@ DLCourse.ipynb: Building Transformer Models with Attention Crash Course. Build a
 Embedchain_Demo.ipynb: Embedchain is an open-source RAG Framework that makes creating and deploying AI apps easy. At its core, Embedchain follows the design principle of being "Conventional but Configurable" to serve both software and machine learning engineers. Here is a straightforward demo of how it works!
 
 GPT4V_IMAGE_PATHPASSING.ipynb: image2text passing the imput as PATH
-GPT4V_IMAGE_URLPASSING.ipynb:  image2text passing the imput as URL
+
+ GPT4V_IMAGE_URLPASSING.ipynb: image2text passing the imput as URL
 
 IMAGE_GENERATOR.ipynb: Generate Images with model DALLE-3 USING OPENAI API
 
