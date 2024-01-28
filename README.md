@@ -1,4 +1,4 @@
-01_generate_text2image_sdxl.ipynb:  generate this image with Stability AI's Stable Diffusion XL model and Amazon SageMaker JumpStart
+01_generate_text2image_sdxl.ipynb:  generate an image with Stability AI's Stable Diffusion XL model and Amazon SageMaker JumpStart
  
 An_introduction_to_explainable_AI_with_Shapley_values.ipynb:  An introduction to explainable AI with Shapley values
 
@@ -16,8 +16,8 @@ DLCourse.ipynb: Building Transformer Models with Attention Crash Course. Build a
 
 Embedchain_Demo.ipynb: Embedchain is an open-source RAG Framework that makes creating and deploying AI apps easy. At its core, Embedchain follows the design principle of being "Conventional but Configurable" to serve both software and machine learning engineers. Here is a straightforward demo of how it works!
 
-GPT4V_IMAGE_PATHPASSING.ipynb
-GPT4V_IMAGE_URLPASSING.ipynb
+GPT4V_IMAGE_PATHPASSING.ipynb: image2text passing the imput as PATH
+GPT4V_IMAGE_URLPASSING.ipynb:  image2text passing the imput as URL
 
 IMAGE_GENERATOR.ipynb: Generate Images with model DALLE-3 USING OPENAI API
 
