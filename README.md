@@ -46,7 +46,7 @@ Mistral_in_AWS.ipynb
 Mistral_in_AWS_with_TWOMODELS.ipynb
 Mistral_integration_with_langchain.ipynb
 
-Mixtral_8x7B.ipynb: USING Flash Attention 2 with Prompt-Examples with model Mixtral_8x7B 
+Mixtral_8x7B.ipynb: Flash Attention 2 with Prompt-Examples using model Mixtral_8x7B from huggingface 
 
 OpeanAIPOC.ipynb
 
