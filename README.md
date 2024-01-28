@@ -45,7 +45,8 @@ Mistral_in_AWS.ipynb
 
 Mistral_in_AWS_with_TWOMODELS.ipynb
 Mistral_integration_with_langchain.ipynb
-Mixtral_8x7B.ipynb
+
+Mixtral_8x7B.ipynb: USING Flash Attention 2 with Prompt-Examples with model Mixtral_8x7B 
 
 OpeanAIPOC.ipynb
 
@@ -85,7 +86,7 @@ mistral_test_AWS.ipynb
 myknn.ipynb
 mysurya.ipynb
 
-opeanai_aws_integration.ipynb
+opeanai_aws_integration.ipynb: Integration OPENAI ANS AWS USING AWS LAMBDA FUNCTION
 
 openai_pgvector_helloworld_FrankMorales_version.ipynb
 openai_pgvector_helloworld_FrankMorales_version_model_gpt-3.5-turbo-0613.ipynb
