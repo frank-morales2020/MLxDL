@@ -8,6 +8,8 @@ Copy_of_DLCourse.ipynb: Building Transformer Models with Attention Crash Course.
 
 Copy_of_rag_fusion_pipeline.ipynb: This notebook shows how to implement RAG Fusion using the LlamaIndex Query Pipeline syntax
 
+APACHEAGE_and_Neo4j.ipynb: I developed a notebook to show how to use Apache AGE and Neo4J in Google Colab. This notebook shows how to use LLMs with Neo4j, a graph database, to perform Retrieval Augmented Generation (RAG).
+
 Cross_Entropy.ipynb: A Gentle Introduction to Cross-Entropy for Machine Learning
 
 DBSWIM.ipynb: POC FOR FAA SWIM DATA WITH POSTGRESQL 
