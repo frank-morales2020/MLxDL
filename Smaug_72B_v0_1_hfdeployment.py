@@ -24,7 +24,7 @@ import torch
 import os
 import sys
 import json
-import IPython
+#import IPython
 from datetime import datetime
 from datasets import load_dataset
 from peft import LoraConfig, PeftModel, prepare_model_for_kbit_training, get_peft_model
@@ -181,7 +181,7 @@ peft_config = LoraConfig(
 from transformers import TrainingArguments
 
 args = TrainingArguments(
-    output_dir="Smaug-72B-v0.1-hf-squad2-flash-attention-2", # directory to save and repository id
+    output_dir=":wSmaug-72B-v0.1-hf-squad2-flash-attention-2", # directory to save and repository id
     num_train_epochs=3,                     # number of training epochs for POC
     per_device_train_batch_size=3,          # batch size per device during training
     gradient_accumulation_steps=2,          # number of steps before performing a backward/update pass
