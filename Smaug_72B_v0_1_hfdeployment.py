@@ -83,6 +83,9 @@ dataset_squad2["validation"].to_json("test_dataset_squad2.json", orient="records
 print(dataset_squad2)
 
 
+dataset_squad2 = load_dataset("json", data_files="train_dataset_squad2.json", split="train")
+print(dataset_squad2)
+
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from trl import setup_chat_format
@@ -94,12 +97,15 @@ bnb_config = BitsAndBytesConfig(
     load_in_4bit=True, bnb_4bit_use_double_quant=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=torch.bfloat16
 )
 
+print()
 print('Load model and tokenizer')
+print()
+
 # Load model and tokenizer
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
     device_map="auto",
-    attn_implementation="flash_attention_2",
+    #attn_implementation="flash_attention_2",
     torch_dtype=torch.bfloat16,
     quantization_config=bnb_config
 )
@@ -113,7 +119,7 @@ tokenizer.pad_token_id = tokenizer.unk_token_id
 # # set chat template to OAI chatML, remove if you start from a fine-tuned model
 model, tokenizer = setup_chat_format(model, tokenizer)
 
-
+print()
 text = "What is the capital of Canada?"
 
 #device = 'cuda'
@@ -122,14 +128,14 @@ model_inputs = tokenizer(text, return_tensors="pt").to(model.device)
 generated_ids = model.generate(**model_inputs, temperature=0.8, top_k=1, top_p=1.0, repetition_penalty=1.4, min_new_tokens=16, max_new_tokens=128, do_sample=True)
 decoded = tokenizer.decode(generated_ids[0])
 print(decoded)
-
+print()
 
 eval_tokenizer = AutoTokenizer.from_pretrained(model_id, add_bos_token=True, trust_remote_code=True, use_fast=False)
 eval_tokenizer.pad_token = eval_tokenizer.eos_token
 
-def gen(model,p, maxlen=1024, sample=True):
+def gen(model,p, maxlen=512, sample=True):
     toks = eval_tokenizer(p, return_tensors="pt")
-    res = model.generate(**toks.to("cuda"), max_new_tokens=maxlen, do_sample=sample,num_return_sequences=1,temperature=0.9,num_beams=1,top_p=0.95,).to('cuda')
+    res = model.generate(**toks.to("cuda"), max_new_tokens=maxlen, do_sample=sample,num_return_sequences=1,temperature=0.7,num_beams=1,top_p=0.95,).to('cuda')
     return eval_tokenizer.batch_decode(res,skip_special_tokens=True)
 
 
@@ -157,6 +163,7 @@ print(dash_line)
 print(f'MODEL GENERATION - ZERO SHOT:\n{output}') # for dataset_dialogsum_test AND dataset_squad2
 
 
+print()
 
 print(len(dataset_squad2))
 
