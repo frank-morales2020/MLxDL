@@ -1,11 +1,15 @@
+
 ## What do the licences mean?
 
-Apache 2.0: Allows users to use the software for any purpose, to distribute it, to modify it, and to distribute modified versions of the software under the terms of the license, without concern for royalties.
+Apache 2.0: Allows users to use the software for any purpose, to distribute it, to modify it, and to distribute modified versions of the software under the terms of the license without concern for royalties.
 
-MIT: Similar to Apache 2.0 but shorter and simpler. Also, in contrast to Apache 2.0, does not require stating any significant changes to the original code.
-CC BY-SA-4.0: Allows (i) copying and redistributing the material and (ii) remixing, transforming, and building upon the material for any purpose, even commercially. But if you do the latter, you must distribute your contributions under the same license as the original. (Thus, may not be viable for internal teams.)
+MIT: Similar to Apache 2.0 but shorter and more straightforward. Also, in contrast to Apache 2.0, it does not require stating any significant changes to the original code.
 
-## list of Notebook 
+Disclaimer: The information provided in this repo does not, and is not intended to, constitute legal advice. Maintainers of this repo are not responsible for the actions of third parties who use the notebooks.
+
+
+## List of notebooks 
+
 01_generate_text2image_sdxl.ipynb:  generate an image with Stability AI's Stable Diffusion XL model and Amazon SageMaker JumpStart
  
 An_introduction_to_explainable_AI_with_Shapley_values.ipynb:  An introduction to explainable AI with Shapley values
