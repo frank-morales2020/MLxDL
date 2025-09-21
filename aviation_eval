@@ -1,0 +1,163 @@
+# --------------------------
+# ✅ 0️⃣ Setup & Drive Mount
+# --------------------------
+from google.colab import drive
+drive.mount('/content/drive', force_remount=True)
+
+import os
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments, BitsAndBytesConfig
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+from trl import SFTTrainer
+from datasets import load_dataset
+from huggingface_hub import login
+import gc
+
+# Clear memory
+torch.cuda.empty_cache()
+gc.collect()
+
+# --------------------------
+# 1️⃣ Hugging Face Login
+# --------------------------
+login(token="")
+
+# --------------------------
+# 2️⃣ Model & Tokenizer
+# --------------------------
+model_name = "meta-llama/Llama-3.2-1B-Instruct"
+tokenizer = AutoTokenizer.from_pretrained(model_name, token="")
+tokenizer.pad_token = tokenizer.eos_token
+
+# --------------------------
+# 3️⃣ BitsAndBytes 4-bit Quantization
+# --------------------------
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16  # safe for T4
+)
+
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    quantization_config=bnb_config,
+    device_map="auto",
+    trust_remote_code=True,
+    token=""
+)
+model.config.use_cache = False
+model = prepare_model_for_kbit_training(model)
+
+# --------------------------
+# 4️⃣ LoRA PEFT Setup
+# --------------------------
+peft_config = LoraConfig(
+    r=16,
+    lora_alpha=32,
+    lora_dropout=0.05,
+    target_modules=["q_proj", "v_proj"],
+    bias="none",
+    task_type="CAUSAL_LM"
+)
+model = get_peft_model(model, peft_config)
+
+# Enable training only LoRA weights
+for name, param in model.named_parameters():
+    if "lora" in name:
+        param.requires_grad = True
+model.enable_input_require_grads()
+model.print_trainable_parameters()
+
+# --------------------------
+# 5️⃣ Load & Preprocess Dataset
+# --------------------------
+dataset = load_dataset("sakharamg/AviationQA", split="train")
+dataset = dataset.shuffle(seed=42).select(range(10000))  # Subset for MVP
+
+# Filter examples
+def filter_example(example):
+    answer = example['Answer'] or ""
+    return answer.strip() != "" and answer != "(est)" and example['Question'] is not None
+
+dataset = dataset.filter(filter_example)
+
+# Format examples using LLaMA 3 chat template
+def format_example(example):
+    answer = example['Answer'] or ""
+    return {
+        "text": f"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n{example['Question']}<|eot_id|>"
+                f"<|start_header_id|>assistant<|end_header_id|>\n\n{answer}<|eot_id>"
+    }
+
+dataset = dataset.map(format_example)
+
+# Tokenize
+max_seq_length = 256
+def preprocess_example(example):
+    tokenized = tokenizer(example["text"], truncation=True, max_length=max_seq_length, return_tensors="pt")
+    return {
+        "input_ids": tokenized["input_ids"].squeeze().tolist(),
+        "attention_mask": tokenized["attention_mask"].squeeze().tolist()
+    }
+
+dataset = dataset.map(preprocess_example)
+
+# Train/test split
+print(f"Dataset size after filtering: {len(dataset)}")
+dataset = dataset.train_test_split(test_size=0.1)
+train_dataset = dataset["train"]
+test_dataset = dataset["test"]
+
+# --------------------------
+# 6️⃣ Training Arguments
+# --------------------------
+output_dir = "/content/drive/MyDrive/aviation-llama-finetuned"
+
+training_args = TrainingArguments(
+    output_dir=output_dir,
+    num_train_epochs=3,
+    per_device_train_batch_size=1,
+    per_device_eval_batch_size=1,
+    gradient_accumulation_steps=2,
+    warmup_steps=50,
+    learning_rate=1e-4,
+    bf16=True,   # ✅ use bf16 instead of fp16 to fix "No inf checks" error
+    logging_steps=5,
+    eval_steps=10,
+    save_steps=10,
+    eval_strategy="steps",  # ✅ older API in your runtime
+    save_total_limit=2,
+    load_best_model_at_end=True,
+    metric_for_best_model="eval_loss",
+    greater_is_better=False,
+    report_to="none"
+)
+
+# --------------------------
+# 7️⃣ SFTTrainer
+# --------------------------
+trainer = SFTTrainer(
+    model=model,
+    train_dataset=train_dataset,
+    eval_dataset=test_dataset,
+    args=training_args
+)
+
+# --------------------------
+# 8️⃣ Start Training
+# --------------------------
+print("Starting training...")
+trainer.train()
+
+# --------------------------
+# 9️⃣ Save & Push to Hub
+# --------------------------
+save_path = "/content/drive/MyDrive/aviation-llama-mvp"
+trainer.model.save_pretrained(save_path)
+tokenizer.save_pretrained(save_path)
+
+trainer.model.push_to_hub("EkeminiThompson/aviation-llama-mvp", token="")
+tokenizer.push_to_hub("EkeminiThompson/aviation-llama-mvp", token="")
