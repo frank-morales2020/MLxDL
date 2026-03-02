@@ -1,123 +1,90 @@
 
-## What do the licences mean?
 
-Apache 2.0: Allows users to use the software for any purpose, to distribute it, to modify it, and to distribute modified versions of the software under the terms of the license without concern for royalties.
+[![Status](https://img.shields.io/badge/Status-Active%20Development-orange?style=flat-square)](https://github.com/frank-morales2020/H2E-Resilient)
+[![Date](https://img.shields.io/badge/Started-February%202026-blue?style=flat-square)](https://github.com/frank-morales2020/H2E-Resilient)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square)](LICENSE)  
 
-MIT: Similar to Apache 2.0 but shorter and more straightforward. Also, in contrast to Apache 2.0, it does not require stating any significant changes to the original code.
+This is a draft for an impactful, professional README for the **MLxDL** repository. It highlights the advanced nature of the projects (Agentic AI, JEPA, and Industry Frameworks) while emphasizing the expertise of the author, Frank Morales.
 
-Disclaimer: The information provided in this repo does not, and is not intended to, constitute legal advice. Maintainers of this repo are not responsible for the actions of third parties who use the notebooks.
+---
 
+# 🚀 MLxDL: Advanced Machine Learning & Deep Learning Ecosystem
 
-## List of notebooks 
+A comprehensive laboratory of cutting-edge AI implementations, ranging from **Agentic Workflows** and **World Models (JEPA)** to industrial-grade **LLM Governance**. This repository serves as a bridge between theoretical research and production-ready AI systems.
 
-01_generate_text2image_sdxl.ipynb:  generate an image with Stability AI's Stable Diffusion XL model and Amazon SageMaker JumpStart
- 
-An_introduction_to_explainable_AI_with_Shapley_values.ipynb:  An introduction to explainable AI with Shapley values
+---
 
-Contextual_Chatbot_NLP_and_Tensorflow.ipynb: CHATBOTS - Using Natural Language Processing and Tensorflow
+## 🌟 Key Highlights
 
-Copy_of_DLCourse.ipynb: Building Transformer Models with Attention Crash Course. Build a Neural Machine Translator in 12 Day
+### 🤖 1. Agentic AI & Multi-Agent Systems
 
-Copy_of_rag_fusion_pipeline.ipynb: This notebook shows how to implement RAG Fusion using the LlamaIndex Query Pipeline syntax
+Implementation of autonomous agents capable of complex reasoning and tool use.
 
-APACHEAGE_and_Neo4j.ipynb: I developed a notebook to show how to use Apache AGE and Neo4J in Google Colab. This notebook shows how to use LLMs with Neo4j, a graph database, to perform Retrieval Augmented Generation (RAG).
+* **H2E Framework:** Engineering "Provable Agency" to ensure AI alignment and accountability.
+* **Multi-Agent Orchestration:** Practical demos using **LangGraph**, **CrewAI**, and **Claude 4.6** for parallel task execution and technical reviews.
+* **Agentic RAG:** Beyond simple retrieval—integrating reasoning loops to improve document-based QA accuracy.
 
-Cross_Entropy.ipynb: A Gentle Introduction to Cross-Entropy for Machine Learning
+### 🧠 2. World Models & JEPA
 
-DBSWIM.ipynb: POC FOR FAA SWIM DATA WITH POSTGRESQL 
+Exploring the next frontier of AI beyond generative text.
 
-DLCourse.ipynb: Building Transformer Models with Attention Crash Course. Build a Neural Machine Translator in 12 Day
+* **V-JEPA & LEJEPA:** Demos of Yann LeCun’s **Joint-Embedding Predictive Architecture**, focusing on latent-space reasoning and "Sketched Isotropic Gaussian Regularization" (SIGReg).
+* **Predictive Planning:** Transitioning from reactive error-correction to proactive, model-based reasoning.
 
-Embedchain_Demo.ipynb: Embedchain is an open-source RAG Framework that makes creating and deploying AI apps easy. At its core, Embedchain follows the design principle of being "Conventional but Configurable" to serve both software and machine learning engineers. Here is a straightforward demo of how it works!
+### 🏢 3. Industrial LLM Applications
 
-GPT4V_IMAGE_PATHPASSING.ipynb: image2text passing the imput as PATH
+* **Medical AGI:** Applying DeepSeek and reasoning models to high-stakes fields like radiology and oncology.
+* **Aviation AI:** Leveraging background expertise to optimize flight planning and airspace restriction management.
+* **Financial Reasoning:** DeepSeek-powered bots for cryptocurrency market analysis and algorithmic trading.
 
- GPT4V_IMAGE_URLPASSING.ipynb: image2text passing the imput as URL
+---
 
-IMAGE_GENERATOR.ipynb: Generate Images with model DALLE-3 USING OPENAI API
+## 📂 Core Repository Structure
 
-LICENSE
+| Module / Notebook | Description |
+| --- | --- |
+| `LEJEPA_VJEPA_AGI_DEMO.ipynb` | World models and AGI-focused predictive architectures. |
+| `AAI_10LEVEL_DEMO.ipynb` | A roadmap for the 10 levels of Agentic AI capability. |
+| `H2E_Governance_Framework` | Methodology for Human-to-Expert (H2E) governance in autonomous systems. |
+| `AGENTIC_T2SQL_DEMO.ipynb` | Advanced Text-to-SQL agents with self-correction capabilities. |
+| `FineTuning_Llama3_MEDAL.ipynb` | Domain-specific fine-tuning for medical datasets. |
 
-LLAMA2.ipynb
+---
 
-LSTM_TIMESERIES.ipynb
-META_AI_SegmentAnythingModel(SAM)_predictor_example.ipynb
+## 🛠️ Tech Stack
 
-MISTRAL_TUTORIAL.ipynb
-MISTRAL_TUTORIAL_T4GPU.ipynb
-MISTRAL_TUTORIAL_a100gpuVt4gpu-A100.ipynb
-MISTRAL_TUTORIAL_a100gpuVt4gpu-A100GPU-2.ipynb
+* **Frameworks:** LangChain, LangGraph, CrewAI, Haystack.
+* **Models:** Claude 3.5/4.6, DeepSeek-V3/R1, Llama 3.x, Mistral, Gemini 2.0.
+* **Infrastructure:** Google Colab, AWS, PostgreSQL, ChromaDB (Vector Search).
 
-MambaGC.ipynb
-Migrate_from_pg_embedding_to_pg_vector.ipynb
+---
 
-Mistral-7B-Instruct-without-flash_attention_2.ipynb
-Mistral-7B-Instruct.ipynb
-Mistral-Embedchain_Demo.ipynb
-Mistral_Integration_with_Langchain_PostgreSQL.ipynb
-Mistral_in_AWS.ipynb
+## 👨‍🔬 About the Author
 
-Mistral_in_AWS_with_TWOMODELS.ipynb
-Mistral_integration_with_langchain.ipynb
+**Frank Morales** is a Boeing Associate Technical Fellow, SMIEEE, and a Global Top 10 Thought Leader in Agentic AI & Open Source. His work focuses on the intersection of autonomous systems, engineering integrity, and the future of AGI.
 
-Mixtral_8x7B.ipynb: Flash Attention 2 with Prompt-Examples using model Mixtral_8x7B from huggingface 
+* **Articles:** [AI Simplified in Plain English (Medium)](https://medium.com/@frankmorales_91352)
+* **Profile:** [Thinkers360](https://www.thinkers360.com/tl/profiles/view/25153)
 
-OpeanAIPOC.ipynb
+---
 
-PCA_COURSE2023.ipynb
-PCA_with_MNIST_Dataset.ipynb
+## 🤝 Contributing
 
-PGEmbeddingEmbedding_T4.ipynb
-PGvectorEmbedding_CPU.ipynb
+Contributions are welcome! Whether it's adding a new notebook, fixing a bug, or suggesting a new agentic pattern, feel free to open a Pull Request.
 
-PatchTST.ipynb
+1. Fork the repo.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
-RLHF_with_Custom_Datasets_EVAL5_A100.ipynb
+---
 
-Rag_Fusion_Pipeline_PostgreSQL_Embedding_Mistral.ipynb
-SemanticSearch.ipynb
-TransformerCourse.ipynb
+## 📜 License
 
-aitutorials_custom_b747.ipynb
+Distributed under the MIT License. See `LICENSE` for more information.
 
-cv2023.ipynb: Computer Vision 
-data.csv
-demo_supervision.ipynb
+---
 
-dogbreed.ipynb: Generate the identification of the dog's breed using model gpt-4-vision-preview based on OpenAI API.  
+**"Moving from reactive capability to provable integrity."** — *The H2E Vision*
 
-first_order_model_demo.ipynb
-
-gptvisionapi-final.ipynb
-gptvisionapi_complete.ipynb
-
-langchain_opensourceLLM_mistral7B_openai.ipynb
-
-mistral_rag_pgvector.ipynb
-mistral_test.ipynb
-mistral_test_AWS.ipynb
-
-myknn.ipynb
-mysurya.ipynb
-
-opeanai_aws_integration.ipynb: Integration OPENAI ANS AWS USING AWS LAMBDA FUNCTION
-
-openai_pgvector_helloworld_FrankMorales_version.ipynb
-openai_pgvector_helloworld_FrankMorales_version_model_gpt-3.5-turbo-0613.ipynb
-openai_pgvector_helloworld_FrankMorales_version_model_gpt-4-0613.ipynb
-
-part3_neural_network_mnist_data_with_rotations.ipynb
-
-rag_fusion_pipeline_PostgreSQL_FM.ipynb
-
-stable_diffusion.ipynb
-
-time_series_exploratory_data_analysis_in_python.ipynb
-time_series_transformers.ipynb
-
-transformer.ipynb
-transformer_TRANSLATOR.ipynb
-
-transformer_from_scratch.ipynb:  Create and train a transformer from scratch. Going through each foundational element step by step and explain what is happening along 
-
-transformermodel.ipynb
