@@ -66,8 +66,8 @@ Exploring the next frontier of AI beyond generative text.
 
 
 * **Articles:** [AI Simplified in Plain English (Medium)](https://medium.com/@frankmorales_91352)
-* **Profile:** [Thinkers360](https://www.thinkers360.com/tl/profiles/view/25153)
-* **Linkedin:** [LinkedIn](https://www.linkedin.com/in/frank-morales1964/)
+* **Profile-1:** [Thinkers360](https://www.thinkers360.com/tl/profiles/view/25153)
+* **Profile-2:** [LinkedIn](https://www.linkedin.com/in/frank-morales1964/)
 
 ---
 
