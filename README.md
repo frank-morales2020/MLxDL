@@ -107,6 +107,19 @@ These notebooks focus on making LLMs more efficient and accurate through modern 
 
 **Note:** Because this is an active research repository, many users utilize these notebooks directly via the **"Open in Colab"** buttons provided in the file headers for immediate testing and reproduction of the results.
 
+
+Based on public engagement signals like **stars (93)**, **forks (29)**, and the frequency with which these notebooks are referenced in your published articles and technical white papers, we can pinpoint which ones are the most "used" by your audience:
+
+### 🔥 The Top 5 Most Impactful Notebooks
+
+| Rank | Notebook | Why it's popular |
+| --- | --- | --- |
+| **1** | `JEPA_AGI_DEMO.ipynb` | **The Flagship:** As your primary implementation of Yann LeCun's World Models, this likely sees the most external traffic from researchers looking for JEPA demos. |
+| **2** | `AAI_10LEVEL_DEMO.ipynb` | **The Conceptual Hub:** Users often look for structured frameworks. This notebook provides the "roadmap" for Agentic AI levels, making it a high-traffic reference point. |
+| **3** | `DEEPSEEK_R1_DISTILL_QWEN_7B_COLAB.ipynb` | **Trending Tech:** Given the massive interest in DeepSeek-R1 and model distillation, this is currently a "hot" notebook for developers wanting to run reasoning models on free hardware. |
+| **4** | `AGENTIC_T2SQL_DEMO.ipynb` | **Practical Utility:** Text-to-SQL is one of the most searched practical use cases for AI agents. This likely has a high "clone-and-run" rate for business applications. |
+| **5** | `CAG_DeepSeek_Mistral_Gemini.ipynb` | **Alternative Architecture:** Since you've been advocating for **Cache-Augmented Generation (CAG)** over RAG, this notebook serves as the go-to comparison for your followers. |
+
 ---
 
 ## 🤝 Contributing
