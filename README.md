@@ -62,7 +62,8 @@ Exploring the next frontier of AI beyond generative text.
 
 ## 👨‍🔬 About the Author
 
-**Frank Morales** is a Boeing Associate Technical Fellow, SMIEEE, and a Global Top 10 Thought Leader in Agentic AI & Open Source. His work focuses on the intersection of autonomous systems, engineering integrity, and the future of AGI.
+**Frank Morales** is a former Boeing Associate Technical Fellow, SMIEEE, and a Global Top 10 Thought Leader in Agentic AI & Open Source. His work focuses on the intersection of autonomous systems, engineering integrity, and the future of AGI. Currently Founder & Lead AI Researcher at Sovereign Machine Lab Association (SMLA). 
+
 
 * **Articles:** [AI Simplified in Plain English (Medium)](https://medium.com/@frankmorales_91352)
 * **Profile:** [Thinkers360](https://www.thinkers360.com/tl/profiles/view/25153)
