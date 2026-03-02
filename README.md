@@ -4,7 +4,8 @@
 [![Date](https://img.shields.io/badge/Started-February%202023-blue?style=flat-square)](https://github.com/frank-morales2020/H2E-Resilient)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square)](LICENSE)  
 
-This is a draft for an impactful, professional README for the **MLxDL** repository. It highlights the advanced nature of the projects (Agentic AI, JEPA, and Industry Frameworks) while emphasizing the expertise of the author, Frank Morales.
+
+This is a draft for an impactful, professional README for the **MLxDL** repository. It highlights the advanced nature of the projects (Agentic AI, JEPA, and Industry Frameworks) while also emphasizing the author's expertise, Frank Morales.
 
 ---
 
