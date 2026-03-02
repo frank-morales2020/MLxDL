@@ -69,6 +69,44 @@ Exploring the next frontier of AI beyond generative text.
 * **Profile-1:** [Thinkers360](https://www.thinkers360.com/tl/profiles/view/25153)
 * **Profile-2:** [LinkedIn](https://www.linkedin.com/in/frank-morales1964/)
 
+
+Based on the repository's structure and recent development activity, the most popular and technically significant notebooks in **frank-morales2020/MLxDL** focus on state-of-the-art AI architectures, specifically World Models (JEPA) and Agentic AI.
+
+Here are the standout notebooks:
+
+### 1. **JEPA & V-JEPA (World Models)**
+
+These are among the most visited notebooks due to their focus on Yann LeCun’s Joint-Embedding Predictive Architecture, which moves beyond standard Generative AI.
+
+* **`JEPA_AGI_DEMO.ipynb`**: A foundational demonstration of how JEPA models reason and predict in latent space rather than just predicting pixels or text.
+* **`V_JEPA_AGI_DEMO.ipynb`**: Focuses on Video Joint-Embedding Predictive Architecture for advanced visual reasoning.
+
+### 2. **Agentic AI & Multi-Agent Systems**
+
+These notebooks explore the transition from "chatbots" to autonomous agents that can use tools and plan.
+
+* **`MISTRAL_OPENMODELDEMO_AAI.ipynb`**: Demonstrates "Agentic AI" (AAI) capabilities using Mistral models to perform goal-oriented tasks.
+* **`AAI_10LEVEL_DEMO.ipynb`**: A structured exploration of the 10 levels of Agentic AI, categorizing the complexity of autonomous behavior.
+* **`AGENTIC_T2SQL_DEMO.ipynb`**: A practical implementation of Text-to-SQL agents that can query databases, check for errors, and self-correct.
+
+### 3. **Large Language Model (LLM) Optimization**
+
+These notebooks focus on making LLMs more efficient and accurate through modern retrieval and generation techniques.
+
+* **`CAG_DeepSeek_Mistral_Gemini.ipynb`**: A popular comparison of **Cache-Augmented Generation (CAG)**—an alternative to RAG—using various top-tier models.
+* **`FineTuning_Llama3_MEDAL.ipynb`**: A detailed guide on fine-tuning Llama-3 for medical domain-specific tasks, showcasing the repository's application in specialized fields.
+
+### 4. **Reasoning & General Intelligence (AGI)**
+
+* **`DEEPSEEK_R1_DISTILL_QWEN_7B_COLAB.ipynb`**: Covers the distillation of reasoning capabilities from DeepSeek-R1 into smaller, more efficient models like Qwen.
+* **`ARC_AGI_DEMO.ipynb`**: Focuses on the Abstraction and Reasoning Corpus (ARC), a benchmark designed to measure an AI's ability to learn new tasks quickly, similar to human intelligence.
+
+### 5. **H2E Framework (Governance & Accountability)**
+
+* **`H2E_Holonomic_Integration.ipynb`**: While highly technical, this is a core piece of the repository that implements the **Human-to-Expert (H2E)** framework, focusing on engineering accountability and "Provable Agency" in AI systems.
+
+**Note:** Because this is an active research repository, many users utilize these notebooks directly via the **"Open in Colab"** buttons provided in the file headers for immediate testing and reproduction of the results.
+
 ---
 
 ## 🤝 Contributing
