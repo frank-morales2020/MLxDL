@@ -7,9 +7,9 @@
 
 # 🚀 MLxDL: Advanced Machine Learning & Deep Learning Ecosystem
 
-This is a comprehensive, actively maintained laboratory for cutting-edge AI research and implementation. It bridges theoretical exploration (Agentic AI, World Models/JEPA) with practical, production-oriented systems — including multi-agent orchestration, domain-specific LLM fine-tuning (aviation, medical, finance), and governance frameworks.
+A comprehensive, actively maintained laboratory for cutting-edge AI research and implementation. It bridges theoretical exploration (Agentic AI, World Models/JEPA) with practical, production-oriented systems — including multi-agent orchestration, domain-specific LLM fine-tuning (aviation, medical, finance), and governance frameworks.
 
-Repository serves as the source code hub for prototypes and the origin of 47 published models on Hugging Face.
+This repo is the source code hub for prototypes and the origin of **47 published models** on Hugging Face.
 
 ## 🌟 Key Highlights
 
@@ -31,24 +31,100 @@ Exploring predictive architectures beyond generative text.
 
 ## 📦 Published Models on Hugging Face (47 total)
 
-Fine-tuned models (mostly Mistral-7B, Llama-3.x, DeepSeek bases) created via notebooks in this repo — using LoRA/PEFT, flash-attention, GGUF, distillation.
+All models are fine-tuned using notebooks in this repo (LoRA/PEFT, flash-attention, GGUF conversions, distillation). Primarily based on Mistral-7B, Llama-3.x, DeepSeek, etc.
 
-Full list: [https://huggingface.co/frankmorales2020](https://huggingface.co/frankmorales2020) (sorted by recently updated)
+Full profile: [https://huggingface.co/frankmorales2020](https://huggingface.co/frankmorales2020) (sorted by recently updated)
 
-### Highlighted by Domain
-| Domain                        | Approx. Count | Example Models (with links)                                                                 | Related Notebooks                                      |
-|-------------------------------|---------------|---------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| Text-to-SQL / Database Query  | ~13          | [Mistral-7B-text-to-sql-flash-attention-2](https://huggingface.co/frankmorales2020/Mistral-7B-text-to-sql-flash-attention-2)<br>[deepseek_r1_text2sql_finetuned](https://huggingface.co/frankmorales2020/deepseek_r1_text2sql_finetuned) | `AGENTIC_T2SQL_DEMO.ipynb`                             |
-| Aviation / Flight Planning    | ~6           | [Mistral-7B-v0.1_AviationQA](https://huggingface.co/frankmorales2020/Mistral-7B-v0.1_AviationQA)<br>[FlightPlan_Transformer_LLM](https://huggingface.co/frankmorales2020/FlightPlan_Transformer_LLM) | Aviation & waypoint fine-tune scripts                  |
-| Medical / Biomedical QA       | ~8           | [Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine](https://huggingface.co/frankmorales2020/Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine)<br>[Mistral-7B-v0.1_MedmcQA](https://huggingface.co/frankmorales2020/Mistral-7B-v0.1_MedmcQA) | `FineTuning_Llama3_MEDAL.ipynb`                        |
-| Cryptocurrency / BTC          | ~3           | [Mistral-7B-BTC-Expert](https://huggingface.co/frankmorales2020/Mistral-7B-BTC-Expert)<br>[Mistral-7B-BTC-JEPA-LLM-Expert](https://huggingface.co/frankmorales2020/Mistral-7B-BTC-JEPA-LLM-Expert) | `BTC_AAI_LLM_BOT.ipynb`                                |
-| Other Specialized             | ~17          | [Voxtral-Mini-4B-H2E-FineTune](https://huggingface.co/frankmorales2020/Voxtral-Mini-4B-H2E-FineTune) (Speech)<br>[Mistral-7B-Philosophy-H2E](https://huggingface.co/frankmorales2020/Mistral-7B-Philosophy-H2E) | Distillation, translator, vision notebooks             |
+### Classification by Domain – Expand for Full List
+
+<details>
+<summary>1. Text-to-SQL / Database Query Generation (~13 models)</summary>
+
+- [Mistral-7B-text-to-sql](https://huggingface.co/frankmorales2020/Mistral-7B-text-to-sql)
+- [Mistral-7B-text-to-sql-flash-attention-2](https://huggingface.co/frankmorales2020/Mistral-7B-text-to-sql-flash-attention-2)
+- [Mistral-7B-text-to-sql-without-flash-attention-2](https://huggingface.co/frankmorales2020/Mistral-7B-text-to-sql-without-flash-attention-2)
+- [Mistral-7B-text-to-sql-flash-attention-2-dataeval](https://huggingface.co/frankmorales2020/Mistral-7B-text-to-sql-flash-attention-2-dataeval)
+- [Mistral-7B-text-to-sql-flash-attention-2-FAISS](https://huggingface.co/frankmorales2020/Mistral-7B-text-to-sql-flash-attention-2-FAISS)
+- [Mistral-7B-text-to-sql-flash-attention-2-FAISS-10epoch](https://huggingface.co/frankmorales2020/Mistral-7B-text-to-sql-flash-attention-2-FAISS-10epoch)
+- [Mistral-7B-text-to-sql-flash-attention-2-FAISS-NEWPOC](https://huggingface.co/frankmorales2020/Mistral-7B-text-to-sql-flash-attention-2-FAISS-NEWPOC)
+- [Meta-Llama-3-8B-text-to-sql-flash-attention-2](https://huggingface.co/frankmorales2020/Meta-Llama-3-8B-text-to-sql-flash-attention-2)
+- [deepseek-llm-7b-base-spider](https://huggingface.co/frankmorales2020/deepseek-llm-7b-base-spider)
+- [deepseek_r1_text2sql_finetuned](https://huggingface.co/frankmorales2020/deepseek_r1_text2sql_finetuned)
+- [Mistral-7B-text-to-RLHF](https://huggingface.co/frankmorales2020/Mistral-7B-text-to-RLHF)
+- Related variants/experiments
+
+Related notebooks: `AGENTIC_T2SQL_DEMO.ipynb`, `FineTuning_LLM-Mistral-7B...text-to-SQL.ipynb`
+
+</details>
+
+<details>
+<summary>2. Aviation / Flight Planning (~6 models)</summary>
+
+- [Mistral-7B-v0.1_AviationQA](https://huggingface.co/frankmorales2020/Mistral-7B-v0.1_AviationQA)
+- [Meta-Llama-3-8B_AviationQA-cosine](https://huggingface.co/frankmorales2020/Meta-Llama-3-8B_AviationQA-cosine)
+- [FlightPlan_Transformer_LLM](https://huggingface.co/frankmorales2020/FlightPlan_Transformer_LLM)
+- [FlightPlan_Transformer_LLM_1GPU_Colab](https://huggingface.co/frankmorales2020/FlightPlan_Transformer_LLM_1GPU_Colab)
+- [flight_plan_waypoints_finetuned](https://huggingface.co/frankmorales2020/flight_plan_waypoints_finetuned)
+- Llama-3.1 orchestrator variants tied to aviation reasoning
+
+Related notebooks: Aviation fine-tune scripts, waypoint processing
 
 Dataset: [flight_plan_waypoints](https://huggingface.co/datasets/frankmorales2020/flight_plan_waypoints)
 
+</details>
+
+<details>
+<summary>3. Medical / Biomedical QA (~8 models)</summary>
+
+- [Mistral-7B-v0.1_MedmcQA](https://huggingface.co/frankmorales2020/Mistral-7B-v0.1_MedmcQA)
+- [Mistral-7B-v0.1_McGill-MEDAL](https://huggingface.co/frankmorales2020/Mistral-7B-v0.1_McGill-MEDAL)
+- [Meta-Llama-3-8B-MEDAL-flash-attention-2](https://huggingface.co/frankmorales2020/Meta-Llama-3-8B-MEDAL-flash-attention-2)
+- [Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine](https://huggingface.co/frankmorales2020/Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine)
+- [NEW-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine-evaldata](https://huggingface.co/frankmorales2020/NEW-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine-evaldata)
+- [POC-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine-evaldata](https://huggingface.co/frankmorales2020/POC-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine-evaldata)
+- [2025-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine](https://huggingface.co/frankmorales2020/2025-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine)
+- Dated variants (e.g., 11APRIL2025, 07MAY2025)
+
+Related notebooks: `FineTuning_Llama3_MEDAL.ipynb`, `AAI_MEDICAL_DEEPSEEK.ipynb`
+
+</details>
+
+<details>
+<summary>4. Cryptocurrency / BTC Expert (~3 models)</summary>
+
+- [Mistral-7B-BTC-Expert](https://huggingface.co/frankmorales2020/Mistral-7B-BTC-Expert)
+- [Mistral-7B-BTC-JEPA-LLM-Expert](https://huggingface.co/frankmorales2020/Mistral-7B-BTC-JEPA-LLM-Expert)
+- Related expert/distilled variants
+
+Related notebooks: `BTC_AAI_LLM_BOT.ipynb`, `FINAL_LLM_JEPA_MISTRAL_FT_BTC.ipynb`
+
+</details>
+
+<details>
+<summary>5. Other Specialized Domains (~17 models)</summary>
+
+- [Voxtral-Mini-4B-H2E-FineTune](https://huggingface.co/frankmorales2020/Voxtral-Mini-4B-H2E-FineTune) – Speech
+- [Mistral-7B-Philosophy-H2E](https://huggingface.co/frankmorales2020/Mistral-7B-Philosophy-H2E) – Philosophy
+- [akkadian-to-english-translator](https://huggingface.co/frankmorales2020/akkadian-to-english-translator)
+- [kkadian-to-spanish-translator](https://huggingface.co/frankmorales2020/kkadian-to-spanish-translator)
+- [Llama-3.1-8B-Orchestrator-GGUF](https://huggingface.co/frankmorales2020/Llama-3.1-8B-Orchestrator-GGUF)
+- [unsloth-DeepSeek-R1-Distill-Llama-8B-mental_health_counseling](https://huggingface.co/frankmorales2020/unsloth-DeepSeek-R1-Distill-Llama-8B-mental_health_counseling) – Mental Health
+- [Mistral-7B-v0.1_Emotion](https://huggingface.co/frankmorales2020/Mistral-7B-v0.1_Emotion)
+- [lora_fine_tuned_phi-4_quantized_vision](https://huggingface.co/frankmorales2020/lora_fine_tuned_phi-4_quantized_vision)
+- [torchtune-Llama-2-7b](https://huggingface.co/frankmorales2020/torchtune-Llama-2-7b)
+- [my-awesome-setfit-model](https://huggingface.co/frankmorales2020/my-awesome-setfit-model)
+- [bert-base-cased_fine_tuned_glue_cola](https://huggingface.co/frankmorales2020/bert-base-cased_fine_tuned_glue_cola)
+- [mistral-7b-alpha-finetuned-llm-science-exam-tpu-colab-v6e-1](https://huggingface.co/frankmorales2020/mistral-7b-alpha-finetuned-llm-science-exam-tpu-colab-v6e-1)
+- [gpt-oss-20b-multilingual-reasoner](https://huggingface.co/frankmorales2020/gpt-oss-20b-multilingual-reasoner)
+- [mistral-7b-qwen-Next-80B-A3B-Instruct-distilled](https://huggingface.co/frankmorales2020/mistral-7b-qwen-Next-80B-A3B-Instruct-distilled)
+- [mistral-7b-gpt-oss-20b-distilled](https://huggingface.co/frankmorales2020/mistral-7b-gpt-oss-20b-distilled)
+- General/distillation/experimental variants (e.g., squad_alignment, dialogsum tests)
+
+</details>
+
 ## 📂 Core Repository Structure & Top Impactful Notebooks
 
-Many notebooks include "Open in Colab" buttons for instant execution.
+Many include **Open in Colab** buttons.
 
 | Rank | Notebook                              | Description / Why Impactful                                                                 |
 |------|---------------------------------------|---------------------------------------------------------------------------------------------|
@@ -58,12 +134,7 @@ Many notebooks include "Open in Colab" buttons for instant execution.
 | 4    | `AGENTIC_T2SQL_DEMO.ipynb`            | Self-correcting Text-to-SQL agents with practical business utility.                         |
 | 5    | `CAG_DeepSeek_Mistral_Gemini.ipynb`   | Cache-Augmented Generation (CAG) vs RAG comparisons across top models.                      |
 
-Additional standouts: `FineTuning_Llama3_MEDAL.ipynb` (medical domain), `BTC_AAI_LLM_BOT.ipynb` (finance), `H2E_Holonomic_Integration.ipynb` (governance core).
-
-## What's New / Recent Activity
-- Latest commit: Mar 5, 2026 (Colab-based updates).
-- Ongoing: New fine-tunes, agent demos, and JEPA extensions.
-- HF activity: Most recent models include Voxtral speech fine-tune and Philosophy expert (updated mid-Feb 2026).
+Additional: `FineTuning_Llama3_MEDAL.ipynb`, `BTC_AAI_LLM_BOT.ipynb`, `H2E_Holonomic_Integration.ipynb`
 
 ## 🛠️ Tech Stack
 - **Frameworks**: LangChain, LangGraph, CrewAI, Haystack, Hugging Face Transformers, PEFT/LoRA.
@@ -78,7 +149,7 @@ Additional standouts: `FineTuning_Llama3_MEDAL.ipynb` (medical domain), `BTC_AAI
 - **LinkedIn**: [Frank Morales](https://www.linkedin.com/in/frank-morales1964/)
 
 ## 🤝 Contributing
-Contributions welcome — new agents, fine-tunes, bug fixes, or patterns!
+Contributions welcome!
 1. Fork the repo.
 2. Create branch: `git checkout -b feature/AmazingFeature`
 3. Commit: `git commit -m 'Add AmazingFeature'`
