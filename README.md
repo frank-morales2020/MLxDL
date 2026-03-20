@@ -16,7 +16,7 @@ This repo is the source code hub for prototypes and the origin of **47 published
 ### 🤖 1. Agentic AI & Multi-Agent Systems
 Implementation of autonomous agents with complex reasoning, tool use, and accountability.
 - **H2E Framework**: Engineering "Provable Agency" for alignment, human-to-expert transitions, and governance.
-- Multi-Agent Orchestration: Demos using LangGraph, CrewAI, Claude, Gemini, DeepSeek for parallel execution and technical reviews.
+- Multi-Agent Orchestration: Demos using LangGraph, CrewAI, Claude, Gemini, and DeepSeek for parallel execution and technical reviews.
 - **Agentic RAG**: Advanced retrieval with reasoning loops, self-correction, and OODA-style planning.
 
 ### 🧠 2. World Models & JEPA
@@ -83,7 +83,7 @@ Dataset: [flight_plan_waypoints](https://huggingface.co/datasets/frankmorales202
 - [NEW-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine-evaldata](https://huggingface.co/frankmorales2020/NEW-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine-evaldata)
 - [POC-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine-evaldata](https://huggingface.co/frankmorales2020/POC-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine-evaldata)
 - [2025-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine](https://huggingface.co/frankmorales2020/2025-Meta-Llama-3-8B-MEDAL-flash-attention-2-cosine)
-- Dated variants (e.g., 11APRIL2025, 07MAY2025)
+- Dated variants (e.g., 11 APRIL 2025, 07 MAY 2025)
 
 Related notebooks: `FineTuning_Llama3_MEDAL.ipynb`, `AAI_MEDICAL_DEEPSEEK.ipynb`
 
@@ -142,7 +142,7 @@ Additional: `FineTuning_Llama3_MEDAL.ipynb`, `BTC_AAI_LLM_BOT.ipynb`, `H2E_Holon
 - **Infrastructure**: Google Colab (GPU/TPU), AWS, PostgreSQL, ChromaDB/FAISS.
 
 ## 👨‍🔬 About the Author
-**Frank Morales** — Former Boeing Associate Technical Fellow, SMIEEE, Global Top 10 Thought Leader in Agentic AI & Open Source. Founder & Lead AI Researcher at Sovereign Machine Lab Association (SMLA).
+**Frank Morales** — Former Boeing Associate Technical Fellow, SMIEEE, Global Top 10 Thought Leader in Agentic AI & Open Source. Founder & Lead AI Researcher at Sovereign Machine Lab Association (SOMALA).
 
 - **Medium**: [AI Simplified in Plain English](https://medium.com/@frankmorales_91352)
 - **Thinkers360**: [Profile](https://www.thinkers360.com/tl/profiles/view/25153)
